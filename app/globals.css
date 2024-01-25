@@ -14,4 +14,33 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background: red;
+}
+
+:root {
+  --orange: #FF7700;
+  --pink: #FF0059;
+  --black: #000000;
+  --gradient: linear-gradient(135deg, #FF7700, #FF0059);
+  --white: #FFFFFF;
+  --blue_100: #F1F4F9;
+  --blue_200: #DCE4EF;
+  --blue_300: #CBD7E7;
+  --blue_400: #AEC1DA;
+  --blue_500: #7A99C2;
+  --blue_600: #3D5C85;
+  --blue_700: #23354D;
+  --blue_800: #182435;
+  --alert: #F2F71B;
+  --danger: #EE2F05;
+  --info: #1498F1;
+  --success: #20E828;
+  --gray_800: #121416;
+  --gray_700: #2C3035;
+  --gray_600: #454C54;
+  --gray_500: #737F8C;
+  --gray_400: #9AA3AC;
+  --gray_300: #CFD4D8;
+  --gray_200: #E3E6E8;
+  --gray_100: #F1F2F4;
 }
