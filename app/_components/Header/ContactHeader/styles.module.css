@@ -1,0 +1,39 @@
+.contact {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.2rem auto;
+}
+
+.contactLeft {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.contactRight {
+  display: flex;
+  align-items: center;
+}
+
+.socialMedia {
+  margin: 0 .8rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  color: var(--white);
+  text-decoration: none;
+  font-style: normal;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    display: flex;
+  }
+}
