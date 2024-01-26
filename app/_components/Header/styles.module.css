@@ -1,0 +1,104 @@
+.headerContainer {
+  width: 90vw;
+  max-width: 130rem;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  background-color: var(--white);
+  padding: .8rem;
+  border-radius: .4rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3.2rem;
+  height: 5rem;
+}
+
+.menu {
+  display: none;
+  align-items: center;
+  list-style: none;
+  flex: 1;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.hamburgerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: .8rem .4rem;
+  background: none;
+  border: none;
+}
+
+.hamburgerMenu>div {
+  width: 2rem;
+  height: .2rem;
+  background: var(--blue_800);
+  border-radius: 3rem;
+}
+
+.menu li {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.desktopOnly {
+  display: none;
+}
+
+.logoContainer {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--white);
+  box-shadow: 0px 1px 10px #0002;
+  border-radius: .4rem;
+  padding: 2.4rem 1.6rem;
+}
+
+.downloadButton {
+  background: var(--gradient);
+  color: var(--white);
+  border: none;
+  padding: .8rem 1.6rem;
+  text-transform: uppercase;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+
+.logoSpacer {
+  width: 21rem;
+}
+
+.menu li.noMargin {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin-top: 0;
+  }
+
+  .hamburgerMenu {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .desktopOnly {
+    display: block;
+  }
+}
