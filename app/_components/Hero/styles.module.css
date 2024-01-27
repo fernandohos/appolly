@@ -1,0 +1,87 @@
+.hero {
+  background: url('../../../public/hero-background.svg');
+  min-height: 100vh;
+  padding-top: 10rem;
+  max-width: 144rem;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  background-size: cover;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.heroContent {
+  width: 90vw;
+  max-width: 130rem;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 3.2rem 0;
+}
+
+.leftContentContainer {
+  max-width: 48rem;
+  position: relative;
+  margin: 5% 5% 7% 0;
+}
+
+.squaredBorder {
+  border: 10px solid var(--pink);
+  position: absolute;
+  width: 100%;
+  height: 115%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+}
+
+.leftContent {
+  background-color: var(--white);
+  gap: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem;
+  z-index: 5;
+  position: relative;
+}
+
+.leftContent h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.downloadApp {
+  font-size: 2.4rem;
+}
+
+.downloadButtons {
+  display: flex;
+  gap: 2.4rem;
+  max-width: 100%;
+}
+
+.downloadButtons a {
+  width: 100%;
+  aspect-ratio: 200/65;
+  max-width: 20rem;
+  max-height: 6.5rem;
+  position: relative;
+}
+
+.phoneImage {
+  height: 70vh;
+  max-height: 500px;
+  position: relative;
+  aspect-ratio: 248/500;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .heroContent {
+    flex-direction: row;
+  }
+}
