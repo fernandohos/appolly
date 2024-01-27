@@ -10,7 +10,7 @@ export function Header() {
   return (
     <header className={styles.headerContainer}>
       <ContactHeader />
-      <div className={styles.header}>
+      <nav className={styles.header}>
         <HamburgerMenu />
         <ul className={styles.menu}>
           <li className={styles.desktopOnly}>Home</li>
@@ -28,7 +28,7 @@ export function Header() {
             <button className={styles.downloadButton}>Download</button>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
   );
 }
