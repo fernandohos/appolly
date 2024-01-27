@@ -4,16 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { ContactHeader } from "./ContactHeader";
 
+import { HamburgerMenu } from "./HamburgerMenu";
+
 export function Header() {
   return (
     <header className={styles.headerContainer}>
       <ContactHeader />
       <div className={styles.header}>
-        <button className={styles.hamburgerMenu} type="button">
-          <div></div>
-          <div></div>
-          <div></div>
-        </button>
+        <HamburgerMenu />
         <ul className={styles.menu}>
           <li className={styles.desktopOnly}>Home</li>
           <li>About</li>
