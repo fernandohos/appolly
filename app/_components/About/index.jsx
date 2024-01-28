@@ -23,7 +23,7 @@ const aboutCardInfo = [
 
 export function About() {
   return (
-    <div className={styles.aboutContainer} id="about">
+    <section className={styles.aboutContainer} id="about">
       <div>
         <h2 className={styles.title}>About our app</h2>
         <p className={styles.description}>
@@ -48,6 +48,6 @@ export function About() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
