@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  width: 100%;
+  gap: .8rem;
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+  box-shadow: 2px 0px 8px #0002;
+  margin-top: 1.6rem;
+  max-width: 50rem;
+}
+
+.title {
+  font-size: 1.6rem;
+  color: var(--blue_800);
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1.6rem;
+  color: var(--gray_400);
+  margin-top: .8rem;
+}
