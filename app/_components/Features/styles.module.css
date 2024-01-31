@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  max-width: 144rem;
+  min-height: 100vh;
+  background: url('../../../public/features-background.svg');
+  padding: 5.6rem 0;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.container > div {
+  width: 90vw;
+  max-width: 130rem;
+  margin: auto;
+}
+
+.title {
+  font-size: 3.2rem;
+  color: var(--white);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5.6rem 0 2.4rem;
+}
+
+.description {
+  color: var(--white);
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 130%;
+  width: 100%;
+  max-width: 60rem;
+  margin: auto;
+}
