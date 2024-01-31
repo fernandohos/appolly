@@ -1,0 +1,103 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 2.4rem;
+  width: 100%;
+  margin: 2.4rem 0;
+  grid-template-areas: "chat" "features" "design" "phone" "android" "retina" "support";
+}
+
+@media(min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas:
+      ". chat ."
+      "features phone android"
+      ". phone ."
+      "design phone retina"
+      ". support .";
+  }
+}
+
+.phoneImage {
+  grid-area: phone;
+  width: 100%;
+  position: relative;
+  aspect-ratio: 375/812;
+  max-width: 35rem;
+  margin: auto;
+}
+
+.chat {
+  grid-area: chat;
+}
+
+.feature {
+  grid-area: features;
+}
+
+.design {
+  grid-area: design;
+}
+
+.android {
+  grid-area: android;
+}
+
+.retina {
+  grid-area: retina;
+}
+
+.support {
+  grid-area: support;
+}
+
+.container * p,
+.container * h3,
+.container * img {
+  text-align: center;
+  margin: auto;
+}
+
+.container * {
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+
+  .container * img {
+    margin: auto;
+  }
+
+  .feature,
+  .design {
+    margin-right: 0;
+  }
+
+  .android,
+  .retina {
+    margin-left: 0;
+  }
+
+  .feature p,
+  .feature h3,
+  .design p,
+  .design h3,
+  .feature img,
+  .design img {
+    text-align: right;
+    margin-right: 0;
+  }
+
+  .android p,
+  .android h3,
+  .retina p,
+  .retina h3,
+  .android img,
+  .retina img {
+    text-align: left;
+    margin-left: 0;
+  }
+
+}
