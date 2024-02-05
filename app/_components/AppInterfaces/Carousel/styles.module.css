@@ -1,0 +1,14 @@
+.carouselContainer {
+  margin: 3.2rem auto;
+}
+
+.slide {
+  max-height: 90vh;
+  aspect-ratio: 245/532;
+  max-width: 24.5rem;
+  border-radius: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  box-shadow: 0px 4px 12px #0003;
+}
