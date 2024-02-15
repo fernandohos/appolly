@@ -3,7 +3,8 @@ import { Hero } from "@components/Hero";
 import { About } from "@components/About";
 import { Features } from "@components/Features";
 import { AppInterfaces } from "@components/AppInterfaces";
-import { DownloadApp } from "./_components/DownloadApp";
+import { DownloadApp } from "@components/DownloadApp";
+import { Tutorial } from "@components/Tutorial";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Features />
       <AppInterfaces />
       <DownloadApp />
+      <Tutorial />
       hello world
     </main>
   );
