@@ -1,0 +1,33 @@
+.playButton {
+  transition: all ease .4s;
+  padding: .8rem;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  background: #fffb;
+  border: none;
+}
+
+.playButton span {
+  display: block;
+  background: #fff9;
+  padding: .8rem;
+  border-radius: 50%;
+}
+
+.playButtonPaused {
+  opacity: 1 !important;
+}
+
+.opacity0 {
+  opacity: 0;
+  transition: all ease .2s;
+}
+
+.opacity1 {
+  opacity: 1;
+  transition: all ease .2s;
+}
