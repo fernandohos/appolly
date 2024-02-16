@@ -5,6 +5,7 @@ import { Features } from "@components/Features";
 import { AppInterfaces } from "@components/AppInterfaces";
 import { DownloadApp } from "@components/DownloadApp";
 import { Tutorial } from "@components/Tutorial";
+import { Team } from "@components/Team";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <AppInterfaces />
       <DownloadApp />
       <Tutorial />
+      <Team />
       hello world
     </main>
   );
