@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  max-width: 144rem;
+  margin: auto;
+  background-image: url("../../../public/hero-background.svg");
+  padding: 5.6rem 5vw;
+  background-size: cover;
+}
+
+.title {
+  font-size: 3.2rem;
+  color: var(--white);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5.6rem 0 2.4rem;
+}
+
+.description {
+  color: var(--white);
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 130%;
+  width: 100%;
+  max-width: 60rem;
+  margin: auto;
+}
