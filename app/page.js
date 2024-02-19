@@ -7,6 +7,7 @@ import { DownloadApp } from "@components/DownloadApp";
 import { Tutorial } from "@components/Tutorial";
 import { Team } from "@components/Team";
 import { Costumers } from "@components/Costumers";
+import { Blog } from "@components/Blog";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
       <Tutorial />
       <Team />
       <Costumers />
-      hello world
+      <Blog />
     </main>
   );
 }
