@@ -8,6 +8,7 @@ import { Tutorial } from "@components/Tutorial";
 import { Team } from "@components/Team";
 import { Costumers } from "@components/Costumers";
 import { Blog } from "@components/Blog";
+import { ContactCard } from "@components/ContactCard";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Team />
       <Costumers />
       <Blog />
+      <ContactCard />
     </main>
   );
 }
