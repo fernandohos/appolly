@@ -1,8 +1,11 @@
+"use client";
+
 import { BlogCard } from "./BlogCard";
 import styles from "./styles.module.css";
 import article1 from "@public/article1.png";
 import article2 from "@public/article2.png";
 import article3 from "@public/article3.png";
+import { motion } from "framer-motion";
 
 const blogArticles = [
   {
@@ -31,11 +34,23 @@ const blogArticles = [
 export function Blog() {
   return (
     <section id="blog" className={styles.container}>
-      <h1 className={styles.title}>OUR RECENT BLOG</h1>
-      <p className={styles.description}>
+      <motion.h2
+        className={styles.title}
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6 }}
+      >
+        OUR RECENT BLOG
+      </motion.h2>
+      <motion.p
+        className={styles.description}
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
         ante velit vitae.
-      </p>
+      </motion.p>
       <div className={styles.articlesContainer}>
         {blogArticles.map((article) => (
           <BlogCard key={article.title} {...article} />

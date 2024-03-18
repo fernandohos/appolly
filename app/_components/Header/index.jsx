@@ -1,14 +1,21 @@
+"use client";
+
 import styles from "./styles.module.css";
 import logo from "@public/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { ContactHeader } from "./ContactHeader";
 
 import { HamburgerMenu } from "./HamburgerMenu";
 
 export function Header() {
   return (
-    <header className={styles.headerContainer}>
+    <motion.header
+      className={styles.headerContainer}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+    >
       <ContactHeader />
       <nav className={styles.header}>
         <HamburgerMenu />
@@ -29,6 +36,6 @@ export function Header() {
           </li>
         </ul>
       </nav>
-    </header>
+    </motion.header>
   );
 }

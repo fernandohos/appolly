@@ -1,17 +1,31 @@
+"use client";
+
 import styles from "./styles.module.css";
 import { Carousel } from "./Carousel";
-
+import { motion } from "framer-motion";
 
 export function AppInterfaces() {
   return (
     <section className={styles.container}>
-      <h1 className={styles.title}>CHECkOUT OUR APP INTERFACE LOOK</h1>
-      <p className={styles.description}>
+      <motion.h2
+        className={styles.title}
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6 }}
+      >
+        CHECkOUT OUR APP INTERFACE LOOK
+      </motion.h2>
+      <motion.p
+        className={styles.description}
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
         ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet
         etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac
         nunc libero urna, feugiat.
-      </p>
+      </motion.p>
       <Carousel />
     </section>
   );

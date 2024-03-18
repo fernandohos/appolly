@@ -1,8 +1,11 @@
+"use client";
+
 import { TeamCard } from "./TeamCard";
 import styles from "./styles.module.css";
 import carlaPhoto from "@public/carla.png";
 import craigPhoto from "@public/craig.png";
 import jocelynPhoto from "@public/jocelyn.png";
+import { motion } from "framer-motion";
 
 const teamPeopleInfo = [
   {
@@ -46,12 +49,24 @@ const teamPeopleInfo = [
 export function Team() {
   return (
     <section className={styles.container}>
-      <h2 className={styles.title}>Our reative team</h2>
-      <p className={styles.description}>
+      <motion.h2
+        className={styles.title}
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6 }}
+      >
+        Our reative team
+      </motion.h2>
+      <motion.p
+        className={styles.description}
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
         ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet
         etiam tincidunt rhoncus.
-      </p>
+      </motion.p>
       <div className={styles.cardsContainer}>
         {teamPeopleInfo.map((info) => (
           <TeamCard key={info.name} {...info} />
